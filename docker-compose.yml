@@ -1,0 +1,8 @@
+services:
+  batch:
+    build: .
+    container_name: batch_processor
+    volumes:
+      - ./data:/data
+    working_dir: /app
+    command: python app/batch.py --output-dir /data
