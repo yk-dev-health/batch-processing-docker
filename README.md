@@ -1,14 +1,15 @@
 # Batch Processing Docker Service
-Simple API + batch service using FastAPI and Docker.
+Minimal batch processing using Python and Docker.
 
 ## Features
-- Health check endpoint
-- Batch CSV processing
-- Dockerized for reproducible deployment
+* Simple CSV and TXT batch output
+* Dockerized for reproducible execution
 
 ## Run
+```bash
 docker compose up --build
+```
 
-## API
-GET /health
-POST /process
+## Output
+* `/data/output.txt` – text output
+* `/data/output.csv` – sample CSV output
